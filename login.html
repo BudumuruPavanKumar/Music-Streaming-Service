@@ -1,0 +1,43 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Muzify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" id="email" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent form from reloading the page
+
+      // You can add real auth here later. For now, just redirect.
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (email && password) {
+        // Redirect to home page (or dashboard)
+        window.location.href = "index.html";
+      } else {
+        alert("Please enter email and password.");
+      }
+    });
+  </script>
+  <footer>
+  <audio id="audioPlayer" controls></audio>
+  <p id="nowPlaying">Now Playing: None</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

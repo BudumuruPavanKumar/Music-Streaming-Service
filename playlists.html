@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playlists - Muzify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Muzify 🎵</h1>
+    <nav>
+        
+  
+      <a href="home.html">Home</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="playlists.html">Playlists</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+  <h2>Your Playlists</h2>
+  <div class="song-list">
+     <div class="song" onclick="playSong('music/music/pandagala.mp3', 'Workout Hits')">
+      <img src="assets\mirch1.jpg" alt="Workout Cover">
+      <p>Mirchi</p>
+    </div>
+ <div class="song" onclick="playSong('music/music/bheemla.mp3', 'Workout Hits')">
+      <img src="assets\bheemla.jpg" alt="Workout Cover">
+      <p>Bheemla Nayak</p>
+    </div>
+
+     <div class="song" onclick="playSong('music/music/kevvukeka.mp3', 'Workout Hits')">
+      <img src="assets\kevvukeka.jpg" alt="Workout Cover">
+      <p>GabbarSingh</p>
+    </div>>
+     <div class="song" onclick="playSong('music/music/breakup.mp3', 'Workout Hits')">
+      <img src="assets\breakup.jpg" alt="Workout Cover">
+      <p>Ninnu Kori</p>
+    </div>
+     <div class="song" onclick="playSong('music/music/ooru.mp3', 'Workout Hits')">
+      <img src="assets\ooru.jpg" alt="Workout Cover">
+      <p>Bhairavakona</p>
+    </div>
+  </div>
+</main>
+<footer>
+  <audio id="audioPlayer" controls></audio>
+  <p id="nowPlaying">Now Playing: None</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
